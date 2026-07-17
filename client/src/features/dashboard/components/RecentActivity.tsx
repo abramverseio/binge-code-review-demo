@@ -9,6 +9,12 @@ export function RecentActivity({ items }: RecentActivityProps) {
   if (items.length === 0) {
     return (
       <EmptyState
+        icon={
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="h-5 w-5" aria-hidden="true">
+            <circle cx="12" cy="12" r="8" />
+            <path strokeLinecap="round" d="M12 8v4l3 2" />
+          </svg>
+        }
         title="All quiet here for now"
         description="Completed tasks will show up here as you check things off."
       />

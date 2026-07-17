@@ -24,6 +24,12 @@ export function TasksPage() {
 
       {!isLoading && tasks && tasks.length === 0 && (
         <EmptyState
+          icon={
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="h-5 w-5" aria-hidden="true">
+              <rect x="4" y="4" width="16" height="16" rx="2" />
+              <path strokeLinecap="round" d="M8 10l2 2 4-4" />
+            </svg>
+          }
           title="Your checklist is empty — nice and tidy!"
           description="Add your first to-do to start planning the big day."
         />
