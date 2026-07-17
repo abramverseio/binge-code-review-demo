@@ -38,6 +38,12 @@ export function VendorsPage() {
 
       {!isLoading && filtered.length === 0 && (
         <EmptyState
+          icon={
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="h-5 w-5" aria-hidden="true">
+              <circle cx="10.5" cy="10.5" r="6.5" />
+              <path strokeLinecap="round" d="M20 20l-4.5-4.5" />
+            </svg>
+          }
           title="No vendors found"
           description="We couldn't find a match — try a different search, or add a new vendor to your list."
         />

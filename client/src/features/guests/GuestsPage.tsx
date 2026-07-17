@@ -76,6 +76,12 @@ export function GuestsPage() {
 
       {!isLoading && guests && guests.length === 0 && (
         <EmptyState
+          icon={
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="h-5 w-5" aria-hidden="true">
+              <circle cx="12" cy="8" r="3.5" />
+              <path strokeLinecap="round" d="M5 20c0-3.5 3-6 7-6s7 2.5 7 6" />
+            </svg>
+          }
           title="No guests yet — add your first!"
           description="Start building your guest list to track RSVPs, meals, and seating."
         />
