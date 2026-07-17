@@ -14,7 +14,7 @@ export function Sidebar() {
     <aside className="w-56 shrink-0 border-r border-slate-200 bg-white p-4">
       <div className="mb-5 px-2">
         <p className="text-lg font-semibold text-slate-900">
-          Buttercup <span className="text-sm text-buttercup-400">♥</span>
+          Buttercup <span className="text-sm text-buttercup-700">♥</span>
         </p>
         <p className="text-xs text-slate-400 -mt-0.5">Wedding Planner</p>
         <p className="mt-1 text-[10px] text-slate-300">Planning as of July 2026</p>
