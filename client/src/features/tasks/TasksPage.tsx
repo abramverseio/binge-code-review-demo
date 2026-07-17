@@ -30,8 +30,8 @@ export function TasksPage() {
               <path strokeLinecap="round" d="M8 10l2 2 4-4" />
             </svg>
           }
-          title="Your checklist is empty — nice and tidy!"
-          description="Add your first to-do to start planning the big day."
+          title="No tasks yet — add your first!"
+          description="Add your first checklist item to start planning."
         />
       )}
 
