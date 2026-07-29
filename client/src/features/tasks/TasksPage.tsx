@@ -23,7 +23,10 @@ export function TasksPage() {
       {isLoading && <p className="text-sm text-slate-500">Loading tasks…</p>}
 
       {!isLoading && tasks && tasks.length === 0 && (
-        <EmptyState title="No tasks yet" description="Add your first checklist item." />
+        <EmptyState
+          title="Your checklist is empty"
+          description="Add your first item and start checking things off your wedding to-do list."
+        />
       )}
 
       {!isLoading && tasks && tasks.length > 0 && (

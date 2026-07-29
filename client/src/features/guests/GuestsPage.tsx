@@ -75,7 +75,10 @@ export function GuestsPage() {
       {isLoading && <p className="text-sm text-slate-500">Loading guests…</p>}
 
       {!isLoading && guests && guests.length === 0 && (
-        <EmptyState title="No guests yet" description="Add your first guest to get started." />
+        <EmptyState
+          title="No guests yet — add your first!"
+          description="Once you add a guest, you'll be able to track RSVPs, meals, and seating right here."
+        />
       )}
 
       {!isLoading && guests && guests.length > 0 && (
