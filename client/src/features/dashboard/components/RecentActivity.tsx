@@ -7,7 +7,12 @@ interface RecentActivityProps {
 
 export function RecentActivity({ items }: RecentActivityProps) {
   if (items.length === 0) {
-    return <EmptyState title="No recent activity" description="Completed tasks will show up here." />;
+    return (
+      <EmptyState
+        title="Nothing here yet"
+        description="Completed tasks will show up here as soon as you check something off."
+      />
+    );
   }
 
   return (

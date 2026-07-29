@@ -37,7 +37,10 @@ export function VendorsPage() {
       {isLoading && <p className="text-sm text-slate-500">Loading vendors…</p>}
 
       {!isLoading && filtered.length === 0 && (
-        <EmptyState title="No vendors found" description="Try a different search or add a new vendor." />
+        <EmptyState
+          title="No vendors found"
+          description="We couldn't find a match — try a different search, or add a new vendor to get started."
+        />
       )}
 
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
